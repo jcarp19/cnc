@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2.5rem 3rem;
+
+  &__brand {
+    &-logo {
+      width: 165px;
+    }
+  }
+}

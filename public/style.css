@@ -14,11 +14,11 @@ html {
 }
 
 body {
-  font-family: "Rival-Sans", serif;
+  font-family: "Rival Sans", serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.6;
-  background-color: #fafafa;
+  background-color: #fdfdfd;
 }
 
 h1,
@@ -83,15 +83,4 @@ p {
   font-weight: 400;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  padding: 2.5rem 3rem;
-}
-.header__brand-logo {
-  width: 165px;
-}
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=style.css.map */
