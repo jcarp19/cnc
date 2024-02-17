@@ -24,7 +24,10 @@
     position: absolute;
     top: 1.25rem;
     right: 1.5rem;
-    background-image: radial-gradient($color-primary, $color-tertiary);
+    background-image: radial-gradient(
+      $color-primary,
+      rgba($color-tertiary, 0.33)
+    );
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
   }

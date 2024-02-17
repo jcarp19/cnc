@@ -1,11 +1,19 @@
 import React from "react";
+import CardList from "../components/Card";
+import Gallery from "../components/Gallery";
+import { Button } from "../components/Button";
 
 const Home = () => {
   return (
-    <section className='content'>
-      <h1>Home Page</h1>
-      <p>This is the Home page.</p>
-    </section>
+    <>
+      <section className='gallery'>
+        <Gallery />
+        <Button />
+      </section>
+      <section className='content'>
+        <CardList />
+      </section>
+    </>
   );
 };
 
