@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <section className='content'>
-      <h1>Contact U</h1>
+      <h1>Contact Us</h1>
       <p>
         Have questions, feedback, or just want to say hello? We’d love to hear
         from you! Feel free to reach out using the form below or drop us an
@@ -19,6 +19,7 @@ const Contact = () => {
           id=''
           placeholder='Questions or Comments'
         />
+        <button>Submit</button>
       </form>
     </section>
   );

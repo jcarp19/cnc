@@ -53,6 +53,10 @@ table {
   border-spacing: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -87,17 +91,24 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-radius: 5px;
+  box-sizing: border-box;
+  max-width: 37rem;
+  background-color: #ffffff;
+  border-radius: 7px;
   box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.15);
 }
 .card:not(:first-of-type) {
   margin: 3rem 0;
 }
 .card__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  min-height: 20rem;
-  background-color: #bcd871;
-  border-radius: 5px 5px 0 0;
+  border-bottom: 5px solid #bcd871;
+}
+.card__image img {
+  width: 32rem;
 }
 
 .footer {
