@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
+  padding: 0rem 3rem 3rem 3rem;
   max-width: 37rem;
   background-color: #ffffff;
   border-radius: 7px;
@@ -22,5 +23,30 @@
   &__image img {
     width: 32rem;
     // border-radius: 5px 5px 0 0;
+  }
+
+  &__headline {
+    margin: 2rem 0;
+  }
+
+  &__text-button {
+    align-self: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    padding: 2rem 3rem;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-decoration: underline;
+    color: $color-primary;
+    font-size: 1.8rem;
+    transition: all 1s ease;
+  }
+
+  &__link:hover {
+    background-color: $color-tertiary;
+    color: $color-secondary;
   }
 }

@@ -124,9 +124,10 @@ function Card({ items }) {
           <div className='card__detail'>
             <p>{item.detail}</p>
           </div>
-
-          <div className='card__link'>
-            <a href={item.link}>Learn More</a>
+          <div className='card__text-button'>
+            <a className='card__link' href={item.link}>
+              Learn More
+            </a>
           </div>
         </div>
       ))}

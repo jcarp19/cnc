@@ -58,32 +58,32 @@ table {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 
 h4 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
 h5 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
@@ -92,6 +92,7 @@ p {
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
+  padding: 0rem 3rem 3rem 3rem;
   max-width: 37rem;
   background-color: #ffffff;
   border-radius: 7px;
@@ -109,6 +110,27 @@ p {
 }
 .card__image img {
   width: 32rem;
+}
+.card__headline {
+  margin: 2rem 0;
+}
+.card__text-button {
+  align-self: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.card__link {
+  padding: 2rem 3rem;
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-decoration: underline;
+  color: #bcd871;
+  font-size: 1.8rem;
+  transition: all 1s ease;
+}
+.card__link:hover {
+  background-color: #cfef7f;
+  color: #97ad5a;
 }
 
 .footer {
