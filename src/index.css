@@ -87,6 +87,19 @@ p {
   font-weight: 400;
 }
 
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.button__btn {
+  background-color: #bcd871;
+  color: #222222;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -124,7 +137,7 @@ p {
   border-radius: 5px;
   background-color: #ffffff;
   text-decoration: underline;
-  color: #bcd871;
+  color: #97ad5a;
   font-size: 1.8rem;
   transition: all 1s ease;
 }
@@ -140,12 +153,52 @@ p {
   padding: 2.5rem 3rem;
   margin: 0 auto;
   background-color: #000000;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.65);
 }
 .footer__row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.footer__nav-list {
+  list-style: none;
+}
+.footer__nav-item:not(:last-of-type) {
+  margin-bottom: 1.6rem;
+}
+.footer__social p {
+  font-weight: 500;
+}
+.footer__social .nav__link--white {
+  font-size: 2.4rem;
+}
+.footer__social-icon {
+  font-size: 2.4rem;
+  padding-right: 1rem;
+}
+.footer__copyright {
+  align-self: center;
+  margin: 3.2rem auto;
+  font-size: 1.3rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.gallery__image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 3rem 0;
 }
 
 .header {
@@ -182,9 +235,9 @@ p {
   position: absolute;
   top: 1.25rem;
   right: 1.5rem;
-  background-image: radial-gradient(#bcd871, rgba(207, 239, 127, 0.33));
+  background-image: radial-gradient(#bcd871, #cfef7f);
   z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+  transition: transform 0.5s cubic-bezier(0.83, 0, 0.17, 1);
 }
 .nav__nav {
   height: 100vh;
@@ -195,7 +248,7 @@ p {
   z-index: 1500;
   display: none;
   opacity: 0;
-  transition: all 0.8s cubic-bezier(0.56, 0.16, 0.35, 1.31);
+  transition: all 0.5s cubic-bezier(0.56, 0.16, 0.35, 1.31);
 }
 .nav__list {
   list-style: none;
@@ -210,9 +263,8 @@ p {
   font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;
-  color: #707070;
+  color: #222222;
   text-decoration: none;
-  text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #00ff00 50%);
   background-size: 230%;
   transition: all 0.4s;
@@ -272,6 +324,12 @@ p {
 .nav__checkbox:checked + .nav__button .nav__icon::after {
   transform: rotate(-135deg);
   top: 0;
+}
+
+.nav__link--white {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
 }
 
 .content {

@@ -24,12 +24,9 @@
     position: absolute;
     top: 1.25rem;
     right: 1.5rem;
-    background-image: radial-gradient(
-      $color-primary,
-      rgba($color-tertiary, 0.33)
-    );
+    background-image: radial-gradient($color-primary, rgba($color-tertiary, 1));
     z-index: 1000;
-    transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+    transition: transform 0.5s cubic-bezier(0.83, 0, 0.17, 1);
   }
 
   &__nav {
@@ -41,7 +38,7 @@
     z-index: 1500;
     display: none;
     opacity: 0;
-    transition: all 0.8s cubic-bezier(0.56, 0.16, 0.35, 1.31);
+    transition: all 0.5s cubic-bezier(0.56, 0.16, 0.35, 1.31);
   }
 
   &__list {
@@ -62,9 +59,9 @@
       font-size: 3rem;
       font-weight: 300;
       padding: 1rem 2rem;
-      color: $color-gray;
+      color: $color-text-dark;
       text-decoration: none;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       background-image: linear-gradient(
         120deg,
         transparent 0%,
@@ -152,4 +149,11 @@
     transform: rotate(-135deg);
     top: 0;
   }
+}
+
+// FOOTER NAVIGATION
+.nav__link--white {
+  font-size: 1.3rem;
+  color: rgba($color-white, 0.65);
+  text-decoration: none;
 }

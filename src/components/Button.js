@@ -1,5 +1,9 @@
 import React from "react";
 
 export const Button = () => {
-  return <button>Call Us</button>;
+  return (
+    <section className='button'>
+      <button className='button__btn'>Call Us</button>
+    </section>
+  );
 };

@@ -6,10 +6,8 @@ import { Button } from "../components/Button";
 const Home = () => {
   return (
     <>
-      <section className='gallery'>
-        <Gallery />
-        <Button />
-      </section>
+      <Gallery />
+      <Button />
       <section className='content'>
         <CardList />
       </section>

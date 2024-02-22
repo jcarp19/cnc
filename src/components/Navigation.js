@@ -20,13 +20,19 @@ const Navigation = () => {
         <div className='nav__nav'>
           <ul className='nav__list'>
             <li className='nav__item' onClick={hideNav}>
-              <Link to='/'>Home</Link>
+              <Link to='/' className='nav__link'>
+                Home
+              </Link>
             </li>
             <li className='nav__item' onClick={hideNav}>
-              <Link to='/contact'>Contact Us</Link>
+              <Link to='/contact' className='nav__link'>
+                Contact Us
+              </Link>
             </li>
             <li className='nav__item' onClick={hideNav}>
-              <Link to='line-card'>Line Card</Link>
+              <Link to='line-card' className='nav__link'>
+                Line Card
+              </Link>
             </li>
           </ul>
         </div>

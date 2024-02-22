@@ -58,32 +58,32 @@ table {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 
 h4 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
 h5 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
@@ -92,6 +92,7 @@ p {
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
+  padding: 0rem 3rem 3rem 3rem;
   max-width: 37rem;
   background-color: #ffffff;
   border-radius: 7px;
@@ -109,6 +110,27 @@ p {
 }
 .card__image img {
   width: 32rem;
+}
+.card__headline {
+  margin: 2rem 0;
+}
+.card__text-button {
+  align-self: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.card__link {
+  padding: 2rem 3rem;
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-decoration: underline;
+  color: #97ad5a;
+  font-size: 1.8rem;
+  transition: all 1s ease;
+}
+.card__link:hover {
+  background-color: #cfef7f;
+  color: #97ad5a;
 }
 
 .footer {
@@ -160,9 +182,9 @@ p {
   position: absolute;
   top: 1.25rem;
   right: 1.5rem;
-  background-image: radial-gradient(#bcd871, rgba(207, 239, 127, 0.33));
+  background-image: radial-gradient(#bcd871, #cfef7f);
   z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+  transition: transform 0.5s cubic-bezier(0.83, 0, 0.17, 1);
 }
 .nav__nav {
   height: 100vh;
@@ -173,7 +195,7 @@ p {
   z-index: 1500;
   display: none;
   opacity: 0;
-  transition: all 0.8s cubic-bezier(0.56, 0.16, 0.35, 1.31);
+  transition: all 0.5s cubic-bezier(0.56, 0.16, 0.35, 1.31);
 }
 .nav__list {
   list-style: none;
@@ -188,9 +210,8 @@ p {
   font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;
-  color: #707070;
+  color: #222222;
   text-decoration: none;
-  text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #00ff00 50%);
   background-size: 230%;
   transition: all 0.4s;
