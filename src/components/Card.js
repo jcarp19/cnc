@@ -9,16 +9,18 @@ import superbee from "../_images/superbee.jpg";
 import swiftcarb from "../_images/swiftcarb.jpg";
 import taylortool from "../_images/taylortool.jpg";
 import toolcraft from "../_images/toolcraft.jpg";
+import company from "../_images/gallery-img-1.jpg";
+import mission from "../_images/gallery-img-1.jpg";
 
 const companyDetail = [
   {
-    image: "company",
+    image: company,
     headline: "Who We Are",
     detail:
       "CNC Tooling Solutions, LLC a technical sales and marketing company that specializes in cutting tools, workholding, machine tool accessories, coolant and coolant maintenance.  We promote products through distribution with a focus on the end user. Our goal is to help our customers reduce costs with better ideas and products.  We build brand awareness with our Distributors and their customers through personal visits, direct marketing, trade shows and social media.",
   },
   {
-    image: "mission",
+    image: mission,
     headline: "Our Mission",
     detail:
       "Our mission is to provide high quality products and a high level of service and support to our customers and principals.",

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
-  padding: 0rem 3rem 3rem 3rem;
+  padding: 3rem;
   max-width: 37rem;
   background-color: #ffffff;
   border-radius: 7px;
@@ -22,6 +22,7 @@
 
   &__image img {
     width: 32rem;
+    margin-bottom: 3rem;
     // border-radius: 5px 5px 0 0;
   }
 

@@ -9,5 +9,7 @@
     color: $color-text-dark;
     padding: 1rem 3rem;
     border-radius: 0.5rem;
+    border: 1px solid $color-secondary;
+    box-shadow: 3px 3px 7px rgba($color-text-dark, 0.15);
   }
 }
