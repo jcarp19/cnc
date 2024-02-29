@@ -413,6 +413,10 @@ p {
   text-decoration: none;
 }
 
+.thankyou {
+  margin: 5rem 3rem;
+}
+
 .content {
   display: flex;
   flex-direction: column;

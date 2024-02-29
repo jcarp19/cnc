@@ -8,13 +8,15 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const form = useRef();
+  const navigate = useNavigate();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(e.target);
+    // console.log(e.target);
 
     emailjs.sendForm(
       "service_fa0q28b",
@@ -23,6 +25,9 @@ const Contact = () => {
       form.current,
       "oM1yzTDkzEL3QkFBe"
     );
+    // return redirect("/thank-you");
+    console.log("form submitted");
+    navigate("/thank-you");
   };
 
   return (
