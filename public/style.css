@@ -1,4 +1,24 @@
 @import url("https://use.typekit.net/mfp3taz.css");
+@keyframes slideIn {
+  from {
+    left: 300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes slideOut {
+  from {
+    left: 0;
+    opacity: 1;
+  }
+  to {
+    left: -500px;
+    opacity: 0;
+  }
+}
 /* CSS RESET */
 *,
 *::after,
@@ -108,7 +128,7 @@ p {
   align-items: flex-start;
   box-sizing: border-box;
   padding: 3rem;
-  max-width: 37rem;
+  max-width: 100%;
   background-color: #ffffff;
   border-radius: 7px;
   box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.15);
@@ -124,7 +144,7 @@ p {
   border-bottom: 5px solid #bcd871;
 }
 .card__image img {
-  width: 32rem;
+  width: 100%;
   margin-bottom: 3rem;
 }
 .card__headline {
@@ -214,7 +234,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1;
   width: 5.5rem;
   height: 100%;
   background-color: #bcd871;
@@ -266,14 +286,27 @@ p {
 }
 
 .gallery {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
   width: 100%;
+  min-height: 300px;
 }
 .gallery__image {
+  position: absolute;
   width: 100%;
-  max-width: 100%;
-  height: auto;
+  height: 100%;
+  opacity: 0;
+}
+
+.active {
+  animation: slideIn 0.5s linear 1 forwards;
+}
+
+.inactive {
+  animation: slideOut 0.5s linear 1 forwards;
 }
 
 .gallery-nav__list {

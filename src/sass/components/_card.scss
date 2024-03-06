@@ -4,7 +4,7 @@
   align-items: flex-start;
   box-sizing: border-box;
   padding: 3rem;
-  max-width: 37rem;
+  max-width: 100%;
   background-color: #ffffff;
   @include box-shadow;
   &:not(:first-of-type) {
@@ -20,7 +20,7 @@
   }
 
   &__image img {
-    width: 32rem;
+    width: 100%;
     margin-bottom: 3rem;
     // border-radius: 5px 5px 0 0;
   }
