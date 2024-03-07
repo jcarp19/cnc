@@ -112,6 +112,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .button__btn {
   background-color: #bcd871;
@@ -285,38 +286,46 @@ p {
   transform: translateY(-4rem);
 }
 
-.gallery {
-  position: relative;
+.slides {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
+  background: #ffffff;
   overflow: hidden;
+  position: relative;
   width: 100%;
   min-height: 300px;
+  margin-bottom: 3rem;
 }
-.gallery__image {
+.slides__slide img {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   opacity: 0;
+  transform: scale(1.5) rotate(15deg);
+  animation: slowFade 15s infinite;
+}
+.slides__slide:nth-child(1) img {
+  animation-delay: 0s;
+}
+.slides__slide:nth-child(2) img {
+  animation-delay: 5s;
+}
+.slides__slide:nth-child(3) img {
+  animation-delay: 10s;
 }
 
-.active {
-  animation: slideIn 0.5s linear 1 forwards;
+@keyframes slowFade {
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  40% {
+    opacity: 0;
+  }
 }
-
-.inactive {
-  animation: slideOut 0.5s linear 1 forwards;
-}
-
-.gallery-nav__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1rem 0 3rem 0;
-}
-
 .header {
   display: flex;
   flex-direction: row;

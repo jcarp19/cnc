@@ -91,7 +91,7 @@ const lineCard = [
 
 function CardList() {
   const location = useLocation();
-  console.log("cardlist pathname " + location.pathname);
+  // console.log("cardlist pathname " + location.pathname);
   if (location.pathname === "/") {
     return <Card items={companyDetail} />;
   } else {
@@ -101,10 +101,10 @@ function CardList() {
 
 function Card({ items }) {
   const path = useLocation();
-  console.log("card pathname " + path.pathname);
+  // console.log("card pathname " + path.pathname);
 
   setTimeout(function () {
-    console.log("Executed after 2 second"); // This runs after 1 second
+    // console.log("Executed after 2 second"); // This runs after 1 second
     const linksToHide = document.getElementsByClassName("card__link");
 
     if (path.pathname === "/")
