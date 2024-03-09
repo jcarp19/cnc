@@ -10,12 +10,14 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path='contact' element={<Contact />} />
-        <Route path='line-card' element={<Products />} />
-        <Route path='thank-you' element={<ThankYou />} />
-      </Routes>
+      <section className='content'>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path='contact' element={<Contact />} />
+          <Route path='line-card' element={<Products />} />
+          <Route path='thank-you' element={<ThankYou />} />
+        </Routes>
+      </section>
       <Footer />
     </>
   );

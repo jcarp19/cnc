@@ -9,17 +9,30 @@
   min-height: 300px;
   margin-bottom: 3rem;
 
+  &__showcase {
+    position: absolute;
+    width: 10rem;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 3;
+
+    & > img {
+      max-width: 100%;
+    }
+  }
+
   &__slide img {
     position: absolute;
     min-width: 100%;
     min-height: 100%;
+    max-width: 100%;
     height: auto;
     // background: #000;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     opacity: 0;
     transform: scale(1.5) rotate(15deg);
-    animation: slowFade 15s infinite;
+    animation: slowFade 25s infinite;
   }
 
   &__slide:nth-child(1) img {
@@ -32,6 +45,12 @@
 
   &__slide:nth-child(3) img {
     animation-delay: 10s;
+  }
+  &__slide:nth-child(4) img {
+    animation-delay: 15s;
+  }
+  &__slide:nth-child(5) img {
+    animation-delay: 20s;
   }
 }
 

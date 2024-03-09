@@ -31,13 +31,13 @@ const Contact = () => {
   };
 
   return (
-    <section className='content'>
+    <section className='contact'>
       <h1>Get In Touch</h1>
       <p>
         Have questions, feedback, or just want to say hello? We’d love to hear
         from you! Feel free to reach out using the form below or drop us an
         email at{" "}
-        <a className='' href='mailto:jeff@cnctoolingsolutions.com'>
+        <a className='a-link' href='mailto:jeff@cnctoolingsolutions.com'>
           jeff@cnctoolingsolutions.com
         </a>
         . Our team is here to assist you.
@@ -109,6 +109,42 @@ const Contact = () => {
           <button className='button__btn'>Submit</button>
         </div>
       </form>
+      <section className='contact__contacts'>
+        <h2>Michigan</h2>
+        <div className='rep'>
+          <h3>Jeff Schmidt</h3>
+          <p>
+            Manufacturer’s Representative
+            <br />
+            <span className='bold'>Cell</span>:{" "}
+            <a href='tel:2488905625' className='link'>
+              248-890-5625
+            </a>
+            <br />
+            <span className='bold'>Email</span>:{" "}
+            <a href='mailto:Jeff@cnctoolingsolutions.com' className='link'>
+              Jeff@Ccnctoolingsolutions.com
+            </a>
+          </p>
+        </div>
+        <h2>Ohio</h2>
+        <div className='rep'>
+          <h3>Mike Klenotic</h3>
+          <p>
+            Manufacturer’s Representative
+            <br />
+            <span className='bold'>Cell</span>:{" "}
+            <a href='tel:4405543680' className='link'>
+              440-554-3680
+            </a>
+            <br />
+            <span className='bold'>Email</span>:{" "}
+            <a href='mailto:Mike.klenotic@gmail.com' className='link'>
+              Mike.klenotic@gmail.com
+            </a>
+          </p>
+        </div>
+      </section>
     </section>
   );
 };

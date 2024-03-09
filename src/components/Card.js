@@ -3,14 +3,15 @@ import { useLocation } from "react-router-dom";
 import abanaki from "../_images/abanaki.jpg";
 import arntz from "../_images/arntz.jpg";
 import ats from "../_images/ats.jpg";
+import cole from "../_images/cole.jpg";
 import fowler from "../_images/fowler.jpg";
 import maq from "../_images/maq.jpg";
 import superbee from "../_images/superbee.jpg";
 import swiftcarb from "../_images/swiftcarb.jpg";
 import taylortool from "../_images/taylortool.jpg";
 import toolcraft from "../_images/toolcraft.jpg";
-import company from "../_images/gallery-img-1.jpg";
-import mission from "../_images/gallery-img-1.jpg";
+import company from "../_images/who-we-are-hero.jpg";
+import mission from "../_images/mission-hero.jpg";
 
 const companyDetail = [
   {
@@ -47,6 +48,13 @@ const lineCard = [
     detail:
       "Barfeeders, high pressure coolant systems, chillers, mist collection, collet chucks, workholding systems.",
     link: "https://www.atssystems.us/",
+  },
+  {
+    image: cole,
+    headline: "Global Leader in Carbide Cutting Tool Solutions.",
+    detail:
+      "Precision-ground carbide cutting tool solutions and cutting tool systems. Produced to exact customer specifications and tolerances.",
+    link: "https://www.colecarbide.com/",
   },
   {
     image: fowler,
@@ -127,7 +135,12 @@ function Card({ items }) {
             <p>{item.detail}</p>
           </div>
           <div className='card__text-button'>
-            <a className='card__link' href={item.link}>
+            <a
+              className='card__link'
+              href={item.link}
+              target='_blank'
+              rel='noreferrer'
+            >
               Learn More
             </a>
           </div>

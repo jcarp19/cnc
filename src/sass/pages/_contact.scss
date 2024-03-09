@@ -1,0 +1,19 @@
+.contact {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 3rem;
+  & > h1,
+  h3 {
+    margin-top: 3rem;
+  }
+
+  &__contacts {
+    & > h2 {
+      margin-top: 5rem;
+    }
+
+    & > h2:first-of-type {
+      margin-top: 7.5rem;
+    }
+  }
+}

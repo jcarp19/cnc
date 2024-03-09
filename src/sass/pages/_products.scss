@@ -1,0 +1,10 @@
+.products {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 3rem;
+
+  & > h1,
+  p {
+    margin-top: 3rem;
+  }
+}

@@ -8,10 +8,10 @@ const Home = () => {
   return (
     <>
       <Gallery />
-      <a href='tel:2488905625'>
-        <Button />
-      </a>
-      <section className='content'>
+      <section className='home'>
+        <a href='tel:2488905625' className='a-link ctr'>
+          <Button />
+        </a>
         <CardList />
       </section>
     </>

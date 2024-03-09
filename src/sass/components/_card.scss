@@ -3,13 +3,16 @@
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
+  margin-top: 7.5rem;
   padding: 3rem;
   max-width: 100%;
   background-color: #ffffff;
   @include box-shadow;
-  &:not(:first-of-type) {
-    margin: 3rem 0;
-  }
+
+  // &:not(:first-of-type) {
+  //   margin-top: 3rem;
+  // }
+
   &__image {
     display: flex;
     flex-direction: column;
@@ -36,7 +39,7 @@
   }
 
   &__link {
-    padding: 2rem 3rem;
+    // padding: 2rem 3rem;
     border-radius: 5px;
     background-color: #ffffff;
     text-decoration: underline;
