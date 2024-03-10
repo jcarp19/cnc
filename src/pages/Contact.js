@@ -110,7 +110,7 @@ const Contact = () => {
         </div>
       </form>
       <section className='contact__contacts'>
-        <h2>Michigan</h2>
+        <h2>Michigan / Ohio</h2>
         <div className='rep'>
           <h3>Jeff Schmidt</h3>
           <p>
@@ -118,7 +118,7 @@ const Contact = () => {
             <br />
             <span className='bold'>Cell</span>:{" "}
             <a href='tel:2488905625' className='link'>
-              248-890-5625
+              (248) 890-5625
             </a>
             <br />
             <span className='bold'>Email</span>:{" "}
@@ -127,20 +127,20 @@ const Contact = () => {
             </a>
           </p>
         </div>
-        <h2>Ohio</h2>
+        <h2>Michigan / Ontario</h2>
         <div className='rep'>
-          <h3>Mike Klenotic</h3>
+          <h3>Roberto Porretta</h3>
           <p>
             Manufacturer’s Representative
             <br />
             <span className='bold'>Cell</span>:{" "}
-            <a href='tel:4405543680' className='link'>
-              440-554-3680
+            <a href='tel:5868230218' className='link'>
+              (586) 823-0218
             </a>
             <br />
             <span className='bold'>Email</span>:{" "}
-            <a href='mailto:Mike.klenotic@gmail.com' className='link'>
-              Mike.klenotic@gmail.com
+            <a href='mailto:rpisolutions@outlook.com' className='link'>
+              rpisolutions@outlook.com
             </a>
           </p>
         </div>

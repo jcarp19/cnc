@@ -84,8 +84,7 @@ const lineCard = [
   {
     image: taylortool,
     headline: "Highest Standards of quality",
-    detail:
-      "Custom HSS and powdered metal taps, reamers and Threading dies. Made in Canada",
+    detail: "Custom HSS taps, reamers and threading dies. Made in Canada",
     link: "https://www.taylortool.com/",
   },
   {

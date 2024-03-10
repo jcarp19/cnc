@@ -1,4 +1,13 @@
 @import url("https://use.typekit.net/mfp3taz.css");
+@keyframes slowFade {
+  5% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes slideIn {
   from {
     left: 300px;
@@ -19,6 +28,14 @@
     opacity: 0;
   }
 }
+.bold {
+  font-weight: 700;
+}
+
+.ctr {
+  margin: 0 auto;
+}
+
 /* CSS RESET */
 *,
 *::after,
@@ -77,14 +94,21 @@ table {
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1 {
   font-size: 3.2rem;
   font-weight: 700;
+  color: #97ad5a;
 }
 
 h2 {
   font-size: 2.7rem;
   font-weight: 500;
+  color: #97ad5a;
 }
 
 h3 {
@@ -100,6 +124,7 @@ h4 {
 h5 {
   font-size: 1.8rem;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 p {
@@ -113,14 +138,17 @@ p {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 4.5rem 0 7.5rem 0;
 }
 .button__btn {
   background-color: #bcd871;
   color: #222222;
-  padding: 1rem 3rem;
+  padding: 2rem 5rem;
   border-radius: 0.5rem;
   border: 1px solid #97ad5a;
   box-shadow: 3px 3px 7px rgba(34, 34, 34, 0.15);
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .card {
@@ -128,14 +156,12 @@ p {
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
+  margin-top: 7.5rem;
   padding: 3rem;
   max-width: 100%;
   background-color: #ffffff;
   border-radius: 7px;
   box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.15);
-}
-.card:not(:first-of-type) {
-  margin: 3rem 0;
 }
 .card__image {
   display: flex;
@@ -157,7 +183,6 @@ p {
   margin-bottom: 2rem;
 }
 .card__link {
-  padding: 2rem 3rem;
   border-radius: 5px;
   background-color: #ffffff;
   text-decoration: underline;
@@ -174,8 +199,9 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 30rem;
   padding: 2.5rem 3rem;
-  margin: 0 auto;
+  margin-top: 7rem;
   background-color: #000000;
   color: rgba(255, 255, 255, 0.65);
 }
@@ -183,6 +209,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .footer__nav-list {
   list-style: none;
@@ -210,10 +237,10 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   border-radius: 7px;
   padding: 5rem 0;
-  margin: 3rem 0;
+  margin-top: 7.5rem;
+  margin-bottom: 2.5rem;
   background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 7px;
@@ -226,7 +253,7 @@ p {
   position: relative;
 }
 .form__group > button {
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 .form__group:not(:last-child) {
   margin-bottom: 3.5rem;
@@ -286,46 +313,10 @@ p {
   transform: translateY(-4rem);
 }
 
-.slides {
-  display: flex;
-  align-items: flex-start;
-  background: #ffffff;
-  overflow: hidden;
-  position: relative;
+.slide {
   width: 100%;
-  min-height: 300px;
-  margin-bottom: 3rem;
-}
-.slides__slide img {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  height: auto;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  opacity: 0;
-  transform: scale(1.5) rotate(15deg);
-  animation: slowFade 15s infinite;
-}
-.slides__slide:nth-child(1) img {
-  animation-delay: 0s;
-}
-.slides__slide:nth-child(2) img {
-  animation-delay: 5s;
-}
-.slides__slide:nth-child(3) img {
-  animation-delay: 10s;
 }
 
-@keyframes slowFade {
-  25% {
-    opacity: 1;
-    transform: scale(1) rotate(0);
-  }
-  40% {
-    opacity: 0;
-  }
-}
 .header {
   display: flex;
   flex-direction: row;
@@ -371,6 +362,7 @@ p {
   top: 0;
   left: 0;
   z-index: 1500;
+  display: none;
   opacity: 0;
   transition: all 0.5s cubic-bezier(0.56, 0.16, 0.35, 1.31);
 }
@@ -407,6 +399,7 @@ p {
 }
 .nav__checkbox:checked ~ .nav__nav {
   width: 100%;
+  display: unset;
   opacity: 1;
 }
 .nav__icon {
@@ -460,13 +453,42 @@ p {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
   width: 100%;
-  padding: 2.5rem 3rem;
-  margin: 0 auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 3rem;
+}
+.contact > h1,
+.contact h3 {
+  margin-top: 3rem;
+}
+.contact__contacts > h2 {
+  margin-top: 5rem;
+}
+.contact__contacts > h2:first-of-type {
+  margin-top: 7.5rem;
+}
+
+.home {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 3rem;
+}
+
+.products {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 3rem;
+}
+.products > h1,
+.products p {
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
