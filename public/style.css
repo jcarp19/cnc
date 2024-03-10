@@ -317,6 +317,24 @@ p {
   width: 100%;
 }
 
+.slick-prev {
+  left: 10px !important;
+  z-index: 2;
+}
+
+.slick-next {
+  right: 10px !important;
+  z-index: 2;
+}
+
+.slick-next:before {
+  color: #bcd871 !important;
+}
+
+.slick-prev:before {
+  color: #bcd871 !important;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -391,7 +409,7 @@ p {
 }
 .nav__link:hover, .nav__link:active {
   background-position: 100%;
-  color: #bcd871;
+  color: #ffffff;
   transform: translateX(1rem);
 }
 .nav__checkbox:checked ~ .nav__background {
@@ -459,6 +477,12 @@ p {
   padding: 0;
 }
 
+@media only screen and (min-width: 599px) {
+  .content {
+    width: 60rem;
+    margin: 0 auto;
+  }
+}
 .contact {
   max-width: 100%;
   box-sizing: border-box;

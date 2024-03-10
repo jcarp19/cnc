@@ -1,3 +1,18 @@
 .slide {
   width: 100%;
 }
+
+.slick-prev {
+  left: 10px !important;
+  z-index: 2;
+}
+.slick-next {
+  right: 10px !important;
+  z-index: 2;
+}
+.slick-next:before {
+  color: $color-primary !important;
+}
+.slick-prev:before {
+  color: $color-primary !important;
+}

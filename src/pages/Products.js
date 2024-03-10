@@ -11,8 +11,9 @@ const Products = () => {
             Click Here to View Our Line Card
           </a>
         </h5>
-
-        <CardList />
+        <div className='products__list'>
+          <CardList />
+        </div>
       </section>
     </>
   );

@@ -7,3 +7,10 @@
   margin: 0;
   padding: 0;
 }
+
+@media only screen and (min-width: 599px) {
+  .content {
+    width: 60rem;
+    margin: 0 auto;
+  }
+}
